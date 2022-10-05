@@ -34,7 +34,7 @@ set nowrap
 set scrolloff=8
 
 "   Plugins (plug-vim) 
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.config/nvim/plugins')
 Plug 'cocopon/iceberg.vim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
