@@ -37,7 +37,6 @@ set scrolloff=8
 call plug#begin('~/.config/nvim/plugins')
 Plug 'cocopon/iceberg.vim'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 colorscheme iceberg
