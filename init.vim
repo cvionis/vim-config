@@ -37,6 +37,7 @@ set scrolloff=8
 call plug#begin('~/.config/nvim/plugins')
 Plug 'cocopon/iceberg.vim'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 colorscheme iceberg
