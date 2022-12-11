@@ -12,4 +12,4 @@ Install vim-plug for neovim
 curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-Open a file using neovim and execute the ``PlugInstall!`` command. Exit and reopen neovim for any changes to take affect.
+Open a file using neovim and execute the ``PlugInstall!`` command. Exit and reopen neovim for any changes to take effect.
