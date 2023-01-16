@@ -4,6 +4,7 @@ set exrc
 
 "   Keep block cursor in INSERT mode rather than switching to 
 "   a thin vertical line
+"   Keep block cursor in INSERT mode rather than switching to thin vertical line
 set guicursor=
 
 "   Line numbering options
@@ -45,6 +46,10 @@ Plug 'projekt0n/github-nvim-theme'
 call plug#end()
 
 set termguicolors
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'tpope/vim-fugitive'
+call plug#end()
+
 colorscheme iceberg
 
 "   Highlighting/color options
