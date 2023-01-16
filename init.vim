@@ -46,10 +46,6 @@ Plug 'projekt0n/github-nvim-theme'
 call plug#end()
 
 set termguicolors
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'tpope/vim-fugitive'
-call plug#end()
-
 colorscheme iceberg
 
 "   Highlighting/color options
