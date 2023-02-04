@@ -43,11 +43,10 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'cocopon/iceberg.vim'
 Plug 'sjl/badwolf'
-Plug 'cvionis/vim-komodo.git'
 call plug#end()
 
 set termguicolors
-colorscheme iceberg
+colorscheme komodo
 
 "   Highlighting/color options
 hi LineNr ctermfg=gray
