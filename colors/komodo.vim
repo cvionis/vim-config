@@ -1,9 +1,9 @@
 hi clear
 syntax reset
-let g:colors_name = "my-scheme"
+let g:colors_name = "komodo"
 set background=dark
 set t_Co=256
-hi Normal guifg=#dadada ctermbg=NONE guibg=#161a19 gui=NONE
+hi Normal guifg=#c9c9c9 ctermbg=NONE guibg=#161a19 gui=NONE
 
 hi DiffText guifg=#95c729 guibg=NONE
 hi ErrorMsg guifg=#95c729 guibg=NONE
@@ -16,7 +16,9 @@ hi GitGutterDelete guifg=#95c729 guibg=NONE
 hi GitGutterChangeDelete guifg=#95c729 guibg=NONE
 hi cssIdentifier guifg=#95c729 guibg=NONE
 hi cssImportant guifg=#95c729 guibg=NONE
+"hi Type guifg=#165e47 guibg=NONE
 hi Type guifg=#95c729 guibg=NONE
+
 hi Identifier guifg=#95c729 guibg=NONE
 hi PMenuSel guifg=#6ef8be guibg=NONE
 hi Constant guifg=#6ef8be guibg=NONE
@@ -66,7 +68,7 @@ hi LineNr guifg=#747474 guibg=#161a19
 hi NonText guifg=#87968a guibg=#161a19
 hi Comment guifg=#87968a gui=italic
 hi SpecialComment guifg=#87968a gui=italic guibg=NONE
-hi CursorLine guibg=#454545
+hi CursorLine guibg=#545c59
 hi TabLineFill gui=NONE guibg=#454545
 hi TabLine guifg=#747474 guibg=#454545 gui=NONE
 hi StatusLine gui=bold guibg=#454545 guifg=#dadada
@@ -74,4 +76,4 @@ hi StatusLineNC gui=NONE guibg=#161a19 guifg=#dadada
 hi Search guibg=#87968a guifg=#dadada
 hi VertSplit gui=NONE guifg=#454545 guibg=NONE
 hi Visual gui=NONE guibg=#454545
-hi colorcolumn ctermbg=0 guibg=#87968A
+hi colorcolumn ctermbg=0 guibg=#87968a

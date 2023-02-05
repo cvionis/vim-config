@@ -42,7 +42,6 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'cocopon/iceberg.vim'
-Plug 'sjl/badwolf'
 call plug#end()
 
 set termguicolors
