@@ -16,7 +16,6 @@ hi GitGutterDelete guifg=#95c729 guibg=NONE
 hi GitGutterChangeDelete guifg=#95c729 guibg=NONE
 hi cssIdentifier guifg=#95c729 guibg=NONE
 hi cssImportant guifg=#95c729 guibg=NONE
-"hi Type guifg=#165e47 guibg=NONE
 hi Type guifg=#95c729 guibg=NONE
 
 hi Identifier guifg=#95c729 guibg=NONE
@@ -38,7 +37,7 @@ hi Special guifg=#229986 guibg=NONE
 hi Label guifg=#229986 guibg=NONE
 hi Delimiter guifg=#229986 guibg=NONE
 hi Number guifg=#229986 guibg=NONE
-hi CursorLineNR guifg=#229986 guibg=NONE
+hi CursorLineNR guifg=NONE guibg=NONE
 hi Define guifg=#229986 guibg=NONE
 hi MoreMsg guifg=#229986 guibg=NONE
 hi Tag guifg=#229986 guibg=NONE
@@ -60,15 +59,14 @@ hi Statement guifg=#8adfc2 guibg=NONE
 hi Operator guifg=#8adfc2 guibg=NONE
 hi cssAttr guifg=#8adfc2 guibg=NONE
 
-
 hi Pmenu guifg=#dadada guibg=#454545
 hi SignColumn guibg=#161a19
 hi Title guifg=#dadada
 hi LineNr guifg=#747474 guibg=#161a19
-hi NonText guifg=#87968a guibg=#161a19
+hi NonText guifg=NONE guibg=NONE
 hi Comment guifg=#87968a gui=italic
 hi SpecialComment guifg=#87968a gui=italic guibg=NONE
-hi CursorLine guibg=#545c59
+hi CursorLine guibg=#303030
 hi TabLineFill gui=NONE guibg=#454545
 hi TabLine guifg=#747474 guibg=#454545 gui=NONE
 hi StatusLine gui=bold guibg=#454545 guifg=#dadada
