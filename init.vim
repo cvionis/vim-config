@@ -45,7 +45,7 @@ Plug 'cocopon/iceberg.vim'
 call plug#end()
 
 set termguicolors
-colorscheme komodo
+colorscheme darktooth
 
 "   Highlighting/color options
 hi LineNr ctermfg=gray
