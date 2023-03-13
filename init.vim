@@ -42,10 +42,11 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'cocopon/iceberg.vim'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 set termguicolors
-colorscheme darktooth
+colorscheme iceberg
 
 "   Highlighting/color options
 hi LineNr ctermfg=gray
