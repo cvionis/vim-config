@@ -34,7 +34,8 @@ function Build()
 			endif
 
 			if strlen(back) > dir_limit
-				break
+				echom 'vimrc (Build): could not find build.bat'
+				return 
 			endif
 		endwhile
 
@@ -44,9 +45,7 @@ function Build()
 	endif
 endfunction
 	
-
 if has('win32') || has('win32unix')
-	"command! -nargs=0 Build !echo 'build' | cmd
 	command! -nargs=0 Build call Build()
 
 endif
