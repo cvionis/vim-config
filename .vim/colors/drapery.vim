@@ -14,6 +14,7 @@ hi Operator 	 guifg=#cccccc guibg=NONE guisp=NONE gui=bold ctermfg=133 ctermbg=N
 hi Keyword 		 guifg=#674a87 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Identifier    guifg=#debae3 guibg=NONE guisp=NONE gui=NONE ctermfg=182 ctermbg=NONE cterm=NONE
 hi Conditional   guifg=#7a6e8a guibg=NONE guisp=NONE gui=bold ctermfg=144 ctermbg=NONE cterm=bold
+hi Repeat 		 guifg=#7a6e8a guibg=NONE 	 guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Label 		 guifg=#7a6e8a guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 hi Delimiter 	 guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Statement     guifg=#654a87 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
@@ -21,17 +22,17 @@ hi Function      guifg=#cccccc guibg=NONE guisp=NONE gui=bold ctermfg=103 ctermb
 
 " Markup-related stuff and comments
 
-hi Comment       guifg=#828282 guibg=NONE guisp=NONE gui=italic ctermfg=8 ctermbg=NONE cterm=NONE
+hi Comment       guifg=#828282 guibg=NONE guisp=NONE gui=NONE ctermfg=8 ctermbg=NONE cterm=NONE
 hi Todo 		 guifg=#a399b0 guibg=#48464a guisp=#48464a gui=NONE ctermfg=103 ctermbg=239 cterm=NONE
 
 " Literals and types 
 
 hi Character     guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 hi SpecialChar   guifg=#756c87 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
-hi String        guifg=#b0a9bc guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
+hi String        guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi Constant      guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Float         guifg=#9e86cc guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Number        guifg=#9e86cc guibg=NONE guisp=NONE gui=NONE ctermfg=182 ctermbg=NONE cterm=NONE
+hi Float         guifg=#7db743 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
+hi Number        guifg=#7db743 guibg=NONE guisp=NONE gui=NONE ctermfg=182 ctermbg=NONE cterm=NONE
 hi Boolean       guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 
 hi Type 		 guifg=#cccccc guibg=NONE guisp=NONE gui=bold ctermfg=103 ctermbg=NONE cterm=bold
@@ -74,7 +75,8 @@ hi LineNr 		 guifg=#525252 guibg=NONE guisp=NONE gui=NONE ctermfg=239 ctermbg=NO
 " Cursor 
 
 hi Cursor 		 guifg=#192224 guibg=#F9F9F9 guisp=#F9F9F9 gui=NONE ctermfg=235 ctermbg=15 cterm=NONE
-hi CursorLine    guifg=NONE guibg=#222E30 guisp=#222E30 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
+hi CursorLine    guifg=NONE guibg=#2d2d2d guisp=#222E30 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
+hi CursorLineNr  guifg=#7db743 guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi CursorColumn  guifg=NONE guibg=#222E30 guisp=#222E30 gui=bold ctermfg=NONE ctermbg=236 cterm=NONE
 
 " Miscellaneous crap
@@ -85,6 +87,5 @@ hi Visual 		 guifg=#192224 guibg=#F9F9FF guisp=#F9F9FF gui=NONE ctermfg=235 cter
 hi VertSplit 	 guifg=#192224 guibg=#5E6C70 guisp=#5E6C70 gui=bold ctermfg=235 ctermbg=66 cterm=bold
 hi PMenu 		 guifg=#192224 guibg=#5E6C70 guisp=#5E6C70 gui=NONE ctermfg=235 ctermbg=66 cterm=NONE
 hi MatchParen 	 guifg=#FFFFFF guibg=NONE 	 guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
-hi Repeat 		 guifg=#7a6e8a guibg=NONE 	 guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Directory 	 guifg=#536991 guibg=NONE 	 guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Underlined 	 guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
