@@ -23,7 +23,7 @@ endif
 
 set termguicolors
 colorscheme drapery
-syntax on
+"syntax on
 
 " Because I always accidentally try to write when shift is still down.
 command W write
