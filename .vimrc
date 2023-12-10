@@ -18,18 +18,21 @@ if has("gui_running")
 	set guioptions-=T
 	set guioptions-=m
 	set guifont=Cascadia_Code:h12
-	silent! e R:
+	"silent! e R:
 endif
 
 set termguicolors
 colorscheme drapery
-"syntax on
+syntax on
 
-" Because I always accidentally try to write when shift is still down.
-command W write
+function SetCwd()
+	let new_cwd = expand('%:p:h')
+	execute 'cd ' . new_cwd
+endfunction
 
-" Traverse backward through directories searching 
-" for a build file, and execute it if found. 
+" Traverse backwards through directories searching 
+" for a build file (assuming it's a standard batch 
+" file that calls cl), and executing it if found. 
 function Build()
 	let build_file = 'build.bat'
 	let build_path = globpath('.', build_file) 
@@ -55,7 +58,13 @@ function Build()
 		execute cmd
 	endif
 endfunction
-	
+
+" When opening any file, set the current working 
+" directory to that file's directory.
+autocmd BufNewFile,BufRead * call SetCwd()
+
 if has('win32') || has('win32unix')
 	command! -nargs=0 Build call Build()
 endif
+
+command W write
