@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =0
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/cygdrive/v/.vim'
+let g:netrw_dirhist_1='/cygdrive/v'
 let g:netrw_dirhist_0='/cygdrive/r'
 let g:netrw_dirhist_9='/cygdrive/r/Temp'
 let g:netrw_dirhist_8='/cygdrive/r'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_6='/cygdrive/r/Games/OpenGL/2DTest'
 let g:netrw_dirhist_5='/cygdrive/r/Games/OpenGL'
 let g:netrw_dirhist_4='/cygdrive/r/Games'
 let g:netrw_dirhist_3='/cygdrive/r'
-let g:netrw_dirhist_2='/cygdrive/v'
-let g:netrw_dirhist_1='/cygdrive/v/.vim/colors'

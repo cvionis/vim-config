@@ -6,4 +6,5 @@
 .bash_history
 .viminfo
 .wget-hsts
+colors/.netrwhist
 *.swp
