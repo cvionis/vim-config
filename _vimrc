@@ -20,6 +20,7 @@ if has("gui_running")
 	set backspace=2
 	set guioptions-=T
 	set guioptions-=m
+	set guioptions-=L
 	set guioptions+=!
 	set guifont=Cascadia_Code:h12
 	syntax on
@@ -45,12 +46,12 @@ function CmdDevInput()
 endfunction
 
 function OpenCmdDevSplit()
-	bel vnew term
+	bel vnew | term
 	call CmdDevInput()
 endfunction
 
 function OpenCmdDevTab()
-	bel tab term
+	tab term
 	call CmdDevInput()
 endfunction
 
