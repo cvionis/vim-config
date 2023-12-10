@@ -3,26 +3,35 @@
 "       its found. 
 set number
 set relativenumber
+set cursorline
+set wrap
 
 set tabstop=4
 set shiftwidth=4
 set smartindent
 
-set wrap
-
-" Turn off search highlighting until the next search
-set nohlsearch
-
 set laststatus=2
 
-set termguicolors
-set t_Co=256
-colorscheme drapery
+" gvim-specific settings
+if has("gui_running")
+	set backspace=2
+	set guioptions-=T
+	set guioptions-=m
+	set guifont=Cascadia_Code:h12
+endif
 
+set termguicolors
+colorscheme drapery
+syntax on
+
+" Because I always accidentally try to write when shift is still down.
 command W write
 
+" Open to virtual drive containing me code
+silent! e R:
+
 " Traverse backward through directories searching 
-" for a build file, and execute it if found
+" for a build file, and execute it if found. 
 function Build()
 	let build_file = 'build.bat'
 	let build_path = globpath('.', build_file) 
@@ -51,5 +60,4 @@ endfunction
 	
 if has('win32') || has('win32unix')
 	command! -nargs=0 Build call Build()
-
 endif
