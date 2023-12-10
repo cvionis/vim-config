@@ -1,0 +1,10 @@
+.bash_profile
+.bashrc
+.inputrc
+.lesshst
+.profile
+.bash_history
+.viminfo
+.wget-hsts
+colors/.netrwhist
+*.swp
