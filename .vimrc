@@ -18,6 +18,7 @@ if has("gui_running")
 	set guioptions-=T
 	set guioptions-=m
 	set guifont=Cascadia_Code:h12
+	silent! e R:
 endif
 
 set termguicolors
@@ -26,9 +27,6 @@ syntax on
 
 " Because I always accidentally try to write when shift is still down.
 command W write
-
-" Open to virtual drive containing me code
-silent! e R:
 
 " Traverse backward through directories searching 
 " for a build file, and execute it if found. 
