@@ -1,3 +1,6 @@
+" TODO: Add command that copies current directory into windows clipboard
+"       Add command that executes a specified program. Search backwards til
+"       its found. 
 set number
 set relativenumber
 
@@ -12,12 +15,14 @@ set nohlsearch
 
 set laststatus=2
 
-colorscheme drapery
 set termguicolors
 set t_Co=256
+colorscheme drapery
 
 command W write
 
+" Traverse backward through directories searching 
+" for a build file, and execute it if found
 function Build()
 	let build_file = 'build.bat'
 	let build_path = globpath('.', build_file) 
@@ -39,7 +44,6 @@ function Build()
 			endif
 		endwhile
 
-		let build_path = back . build_file
 		let cmd = '!echo "pushd ' . back . ' & ' . build_file . ' & popd ' . '" | cmd'
 		execute cmd
 	endif

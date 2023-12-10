@@ -1,0 +1,9 @@
+.bash_profile
+.bash_rc
+.inputrc
+.lesshst
+.profile
+.bash_history
+.viminfo
+.wget-hsts
+*.swp
