@@ -1,6 +1,4 @@
 " TODO: 
-"  - Add command that copies current directory into windows clipboard
-"  - Add command that executes a specified program. Search backwards til it's found. 
 "  - Fix broken vimrc when using vim in cmd
 
 set number
@@ -19,10 +17,14 @@ if has("gui_running")
 	silent! e R:
 	set backspace=2
 	set guioptions-=T
-	set guioptions-=m
+	"set guioptions-=m
 	set guioptions-=L
 	set guioptions+=!
-	set guifont=Cascadia_Code:h12
+	set guifont=Consolas:h14
+
+	highlight Cursor gui=reverse guifg=NONE guibg=NONE
+	set guicursor=n-v-c-i:block-Cursor
+
 	syntax on
 endif
 
@@ -34,14 +36,11 @@ function SetCwd()
 	execute 'cd ' . new_cwd
 endfunction
 
-" These three functions are an awful hack to open a terminal window 
-" that allows me to use the MSVC compiler.
+" An ugly hack to open a terminal window 
+" that allows me to use MSVC's compiler.
 
 function CmdDevInput()
-	call feedkeys('C:\Users\"Chance Vionis"\Documents\"Batch Files"\cmdlaunch.bat')
-	call feedkeys("\<CR>")
-
-	call feedkeys('clear')
+	call feedkeys('call C:\"Program Files"\"Microsoft Visual Studio"\2022\Community\VC\Auxiliary\Build\vcvarsall.bat x64 > nul && clear')
 	call feedkeys("\<CR>")
 endfunction
 
@@ -100,3 +99,4 @@ if has('win32') || has('win32unix')
 endif
 
 command W write
+command Quit silent! e .  | call SetCwd()

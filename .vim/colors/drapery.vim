@@ -27,11 +27,11 @@ hi Todo 		 guifg=#a399b0 guibg=#48464a guisp=#48464a gui=NONE ctermfg=103 ctermb
 " Literals and types 
 
 hi Character     guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi SpecialChar   guifg=#756c87 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
+hi SpecialChar   guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi String        guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi Constant      guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Float         guifg=#7db743 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Number        guifg=#7db743 guibg=NONE guisp=NONE gui=NONE ctermfg=182 ctermbg=NONE cterm=NONE
+hi Float         guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
+hi Number        guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=182 ctermbg=NONE cterm=NONE
 hi Boolean       guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 
 hi Type 		 guifg=#cccccc guibg=NONE guisp=NONE gui=NONE ctermfg=103 ctermbg=NONE cterm=bold
@@ -75,7 +75,7 @@ hi TabLineSel    guifg=#ccb2cc guibg=#694a87 guisp=#694a87 gui=NONE ctermfg=182 
 
 hi Cursor 		 guifg=#192224 guibg=#F9F9F9 guisp=#F9F9F9 gui=NONE ctermfg=235 ctermbg=15 cterm=NONE
 hi CursorLine    guifg=NONE guibg=#2d2d2d guisp=#222E30 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
-hi CursorLineNr  guifg=#7db743 guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+hi CursorLineNr  guifg=#c1b528 guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi CursorColumn  guifg=NONE guibg=#222E30 guisp=#222E30 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 
 " Miscellaneous 
