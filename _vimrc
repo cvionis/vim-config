@@ -6,8 +6,9 @@ set relativenumber
 set cursorline
 set wrap
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set expandtab
 set smartindent
 
 set laststatus=2
@@ -17,10 +18,10 @@ if has("gui_running")
 	silent! e R:
 	set backspace=2
 	set guioptions-=T
-	"set guioptions-=m
+	set guioptions-=m
 	set guioptions-=L
 	set guioptions+=!
-	set guifont=Consolas:h14
+	set guifont=Liberation_Mono:h12
 
 	highlight Cursor gui=reverse guifg=NONE guibg=NONE
 	set guicursor=n-v-c-i:block-Cursor
@@ -29,7 +30,7 @@ if has("gui_running")
 endif
 
 set termguicolors
-colorscheme drapery
+colorscheme drapery 
 
 function SetCwd()
 	let new_cwd = expand('%:p:h')
